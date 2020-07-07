@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Karan\\Anaconda3\\envs\\int\\python.exe"
+    "python.pythonPath": "C:\\Users\\Karan\\Anaconda3\\envs\\int\\python.exe",
+    "editor.formatOnSave": true
 }
