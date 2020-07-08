@@ -1,1 +1,1 @@
-docker-compose run app sh -c %1
+docker-compose run --rm app sh -c %1
