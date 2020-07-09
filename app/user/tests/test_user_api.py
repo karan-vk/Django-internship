@@ -108,9 +108,10 @@ class PrivateUserApiTest(TestCase):
             'email': self.user.email
         })
 
-    def test_post_not_allowed(self):
-        """Test that post is not allowed on me """
+    def test_post_me_not_allowed(self):
+        """Test that POST is not allowed on the me url"""
         res = self.client.post(ME_URL, {})
+
         self.assertEqual(res.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def test_udate_user_profile(self):
