@@ -24,6 +24,5 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Docker Build
-      run: |
-        pip install docker-compose 
+      run: | 
         docker-compose run app sh -c "python manage.py test"
