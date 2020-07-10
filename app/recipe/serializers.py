@@ -21,10 +21,15 @@ class IngredientSerializer(serializers.ModelSerializer):
 
 
 class RecipeSerializer(serializers.ModelSerializer):
-    """Serializer for recipe obkects """
+    """Serializer for recipe objects """
     ingredients = serializers.PrimaryKeyRelatedField(
-        many=True
+        many=True,
         queryset=Ingredient.objects.all()
+    )
+    tags = serializers.PrimaryKeyRelatedField(
+        many=True,
+        queryset=Tag.objects.all()
+
     )
 
     class Meta:
